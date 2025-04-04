@@ -1,0 +1,26 @@
+{
+  "name": "leave-management-system",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "packageManager": "npm@10.9.2",
+  "scripts": {
+    "dev": "turbo run dev",
+    "environment": "turbo run environment",
+    "env": "npm run environment",
+    "prettier": "prettier --check './apps/**/*.{js,mjs,cjs,json}'",
+    "prettier:fix": "prettier --write './apps/**/*.{js,mjs,cjs,json}'",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "fix": "npm run prettier:fix && turbo run fix"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "dependencies": {
+    "turbo": "^2.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
